@@ -1,0 +1,23 @@
+
+#header {
+    background-color:lightblue;
+    border:2px solid lightskyblue;
+    box-shadow:5px 5px 38px lightskyblue;
+}
+canvas {
+    border-radius:15px;
+    box-shadow:5px 5px 38px gray;
+}
+#division {
+    background-color:lightblue;
+    border:2px solid lightskyblue;
+    box-shadow:5px 5px 38px lightskyblue;
+}
+#footer {
+    bottom:0;
+    position:fixed;
+    background-color:lightblue;
+    border:2px solid lightskyblue;
+    box-shadow:5px 5px 38px lightskyblue;
+    width:100%;
+}

@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <title>AI PING PONG</title>
+        <link href = "style.css" rel = "stylesheet">
+        <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.1/p5.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.1/addons/p5.sound.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
+    <body style = "    text-align:center;
+    background-color:black;">
+        <div id = "header">
+<h2 style = " color:white;
+font-family:Arial;">AI PING PONG</h2>
+<p style = " color:white;
+font-family:Arial;">Use your wrist to control the paddel.</p>
+<p style = " color:white;
+font-family:Arial;" id = "Status">Status : </p>
+        </div>
+        <br><br>
+        <button style = " background-color:lightblue;
+        border:2px solid lightskyblue;
+        box-shadow:5px 5px 38px lightskyblue; color:white; border-radius:2px;" onclick = "Play()">Play Game</button>
+        <br><br>
+        <button type="button" style = " background-color:lightblue;
+        border:2px solid lightskyblue;
+        box-shadow:5px 5px 38px lightskyblue; color:white; border-radius:2px;" data-toggle="modal" data-target="#myModal">Open Modal</button>
+        <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog">
+            
+              <!-- Modal content-->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Instructions</h4>
+                </div>
+                <div class="modal-body" id = "division">
+                  <p style = " color:white;
+                  font-family:Arial;">Use your right wrist as the paddel for the ball.<br>
+                  Move your right wrist around, you will see the paddel will be moving.
+                Sometimes it might not detect the wrist because of the nueral network, but<br>
+            it works normally most of the time.</p>
+
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Ok</button>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+          <div id = "footer">
+<h4 style = " color:white;
+font-family:Arial;">Made by Infinity847</h4>
+          </div>
+          <br><br>
+        <script src = "main.js"></script>
+    </body>
+</html>
